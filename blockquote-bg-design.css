@@ -1,0 +1,15 @@
+/* Focus is on box-shadow
+The numbers describe x and y offsets, blur and spread radius, and color.
+Source: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+
+/* A border radius was also added to smooth out the sharp corners */
+/* Aligning the text in the center is best to create space between text and edges */
+
+/* I find this to be the best setting for popping out a quote */
+blockquote {
+    position: relative;
+    background: #0dbaff;
+    box-shadow: 10px 5px 50px black;
+    border-radius: 5px;
+    text-align: center
+}
