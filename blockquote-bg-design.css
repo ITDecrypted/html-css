@@ -1,5 +1,6 @@
 /* Focus is on box-shadow
 The numbers describe x and y offsets, blur and spread radius, and color.
+Positive offsets drag the box right or down
 Source: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 
 /* A border radius was also added to smooth out the sharp corners */
@@ -12,4 +13,26 @@ blockquote {
     box-shadow: 10px 5px 50px black;
     border-radius: 5px;
     text-align: center
+}
+
+/* The blockquote quotes are also edited for emphasis */
+
+blockquote:before {
+    position: absolute;
+    content: open-quote;
+    font-size: 4em;
+    margin-left: -0.6em;
+    margin-top: -0.4em;
+}
+blockquote:after {
+    position: absolute;
+    content: close-quote;
+    font-size: 4em;
+    bottom: 0;
+    right: 0;
+    margin-right: -0.6em;
+    margin-bottom: -0.8em;
+}
+blockquote p {
+    display: inline;
 }
