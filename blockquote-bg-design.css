@@ -1,6 +1,7 @@
 /* Focus is on box-shadow
 The numbers describe x and y offsets, blur and spread radius, and color.
-Positive offsets drag the box right or down
+Positive offsets drag the box right or down; 
+Why down? Because we scroll down to read a page. Up is the reverse (or negative) direction!
 Source: https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 
 /* A border radius was also added to smooth out the sharp corners */
